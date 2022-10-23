@@ -2,6 +2,7 @@ import RecognitionsStyle from "./recognitions.styled";
 import Container from "@/components/utils/container";
 import Link from "next/link";
 import Image from "next/image";
+import SectionTitle from "@/components/utils/section-title";
 
 const Recognitions = () => {
   return (
@@ -9,6 +10,11 @@ const Recognitions = () => {
       <Container>
         <div className="recognitions">
           <h3 className="trading-title">Our products received recognition</h3>
+          <SectionTitle
+            title="Our products received recognition"
+            desc="Our products received recognition"
+          />
+
           <div className="recognitions-body">
             <Link href="#">
               <a>

@@ -3,10 +3,7 @@ import styled from "styled-components";
 const CryptocurrenciesStyle = styled.div`
   .cryptocurrencies {
     padding: 75px 0;
-    .header {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+
     .table {
       thead tr th {
         color: #667c99;

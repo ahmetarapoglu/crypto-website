@@ -5,6 +5,7 @@ import Container from "@/components/utils/container";
 //antdesgin
 import { Collapse } from "antd";
 import Link from "next/link";
+import SectionTitle from "@/components/utils/section-title";
 
 const Faq = () => {
   const { Panel } = Collapse;
@@ -17,26 +18,28 @@ const Faq = () => {
     <FaqStyle>
       <Container>
         <div className="faq">
-          <div className="header">
-            <h3>Frequently Asked Questions</h3>
-          </div>
+          <SectionTitle
+            title="Frequently Asked Questions"
+            desc="Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea."
+          />
           <div className="colpase">
-            <Collapse defaultActiveKey={["1"]}>
+            <Collapse
+              defaultActiveKey={["1"]}
+              expandIconPosition="end"
+              ghost
+              accordion
+            >
               <Panel header="FAQ Ne Demek?" key="1">
                 <p>{text}</p>
               </Panel>
-            </Collapse>
-            <Collapse>
+
               <Panel header="Açılımı Nedir?" key="2">
                 <p>{text}</p>
               </Panel>
-            </Collapse>
-            <Collapse>
               <Panel header=" FAQ Türkçe anlamı nedir?" key="3">
                 <p>{text}</p>
               </Panel>
-            </Collapse>
-            <Collapse>
+
               <Panel header="FAQ Ne Demek, Açılımı Nedir? " key="4">
                 <p>{text}</p>
               </Panel>

@@ -2,12 +2,16 @@ import StartTradingStyle from "./start-trading.styled";
 import Container from "@/components/utils/container";
 import { AiFillCreditCard } from "react-icons/ai";
 import Link from "next/link";
+import SectionTitle from "@/components/utils/section-title";
 const Starttrading = () => {
   return (
     <StartTradingStyle>
       <Container>
         <div className="start-trading">
-          <h3 className="trading-title">Start trading crypto</h3>
+          <SectionTitle
+            title="Start trading crypto"
+            desc="Our products received recognition"
+          />
           <div className="trading-body">
             <Link href="#">
               <a>

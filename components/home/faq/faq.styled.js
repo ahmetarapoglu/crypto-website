@@ -3,31 +3,45 @@ import styled from "styled-components";
 const FaqStyle = styled.div`
   padding: 50px;
   .faq {
-    .header {
-      margin-bottom: 50px;
-      h3 {
-        font-size: 1.5rem;
-        text-align: center;
-      }
-    }
     .colpase {
       .ant-collapse {
-        margin-bottom: 10px;
-
+        .ant-collapse-item-active
+          .ant-collapse-header
+          .ant-collapse-header-text {
+          color: #257eaf;
+        }
         .ant-collapse-header {
-          background-color: #257eaf;
+          background-color: #f5f8ff;
+          border-radius: 25px;
+          padding: 18px;
+          margin-bottom: 10px;
+
+          &:hover {
+            .ant-collapse-header-text {
+              color: #257eaf;
+            }
+          }
           .ant-collapse-expand-icon {
+            .ant-collapse-arrow {
+              transition: all 0.4s;
+              background: #257eaf;
+              padding: 10px;
+              border-radius: 17px;
+            }
             svg {
               color: #fff;
             }
           }
           .ant-collapse-header-text {
-            font-size: 1.1rem;
-            color: #fff;
+            transition: all 0.4s;
+            font-size: 0.99rem;
+            color: #303948;
+            font-weight: 700;
           }
         }
         .ant-collapse-content-box p {
           font-size: 1rem;
+          color: #878787;
         }
       }
     }

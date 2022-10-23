@@ -1,13 +1,15 @@
 import AboutUsStyle from "./about-us.styled";
 import Container from "@/components/utils/container";
+import SectionTitle from "@/components/utils/section-title";
 const AboutUs = () => {
   return (
     <AboutUsStyle>
       <Container>
+        <SectionTitle
+          title="About Us"
+          desc="Magnam dolores commodi suscipit Magnam dolores commodi suscipit.."
+        />
         <div className="about-us">
-          <div className="ttile">
-            <h3>About us</h3>
-          </div>
           <div className="body">
             <div className="content">
               <h3 className="title">2013</h3>

@@ -3,15 +3,17 @@ import CryptocurrenciesStyle from "./cryptocurrencies.styled";
 import Table from "react-bootstrap/Table";
 import Link from "next/link";
 import { FaBtc } from "react-icons/fa";
+import SectionTitle from "@/components/utils/section-title";
 
 const Cryptocurrencies = () => {
   return (
     <CryptocurrenciesStyle>
       <Container>
         <div className="cryptocurrencies">
-          <div className="header">
-            <h3>Top cryptocurrencies</h3>
-          </div>
+          <SectionTitle
+            title="Top cryptocurrencies"
+            desc="Top cryptocurrencies"
+          />
           <div className="table">
             <Table responsive="sm">
               <thead>

@@ -2,10 +2,6 @@ import styled from "styled-components";
 
 const StartTradingStyle = styled.div`
   .start-trading {
-    .trading-title {
-      text-align: center;
-      margin-bottom: 20px;
-    }
     .trading-body {
       display: flex;
       flex-wrap: wrap;

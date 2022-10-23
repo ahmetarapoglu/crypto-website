@@ -7,6 +7,7 @@ import Image from "next/image";
 import styled from "styled-components";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { useCallback, useRef } from "react";
+import SectionTitle from "@/components/utils/section-title";
 const SlideImageStyle = styled.div`
   position: relative;
   width: 75%;
@@ -48,9 +49,7 @@ const FeaturedIn = () => {
     <FeaturedInStyle>
       <Container>
         <div className="featured-in">
-          <div className="header">
-            <h3>Featured in</h3>
-          </div>
+          <SectionTitle title="Featured In" desc="Top cryptocurrencies" />
           <div className="slide">
             <Swiper
               onInit={(_) => (swiper.current = _)}
@@ -139,21 +138,21 @@ const FeaturedIn = () => {
                 </SlideImageStyle>
               </SwiperSlide>
             </Swiper>
+            <StyledSwiperBtn
+              className="swipbtn"
+              placement="right"
+              onClick={() => hanleSwiperNextPrev("next")}
+            >
+              <IoIosArrowForward style={{ fontSize: "25px" }} />
+            </StyledSwiperBtn>
+            <StyledSwiperBtn
+              className="swipbtn"
+              placement="left"
+              onClick={() => hanleSwiperNextPrev("prev")}
+            >
+              <IoIosArrowBack style={{ fontSize: "25px" }} />
+            </StyledSwiperBtn>
           </div>
-          <StyledSwiperBtn
-            className="swipbtn"
-            placement="right"
-            onClick={() => hanleSwiperNextPrev("next")}
-          >
-            <IoIosArrowForward style={{ fontSize: "25px" }} />
-          </StyledSwiperBtn>
-          <StyledSwiperBtn
-            className="swipbtn"
-            placement="left"
-            onClick={() => hanleSwiperNextPrev("prev")}
-          >
-            <IoIosArrowBack style={{ fontSize: "25px" }} />
-          </StyledSwiperBtn>
         </div>
       </Container>
     </FeaturedInStyle>

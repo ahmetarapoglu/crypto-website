@@ -2,9 +2,14 @@ import WhoPspayStyle from "./who-pspay.styled";
 import Container from "@/components/utils/container";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Scrollbar, Mousewheel } from "swiper";
+import SectionTitle from "@/components/utils/section-title";
 const WhoPspay = () => {
   return (
     <WhoPspayStyle>
+      <SectionTitle
+        title="Who Us"
+        desc="Become a crypto owner in minutes using your debit or credit card."
+      />
       <Container>
         <div className="who-us">
           <Swiper

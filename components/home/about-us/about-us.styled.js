@@ -6,11 +6,7 @@ const AboutUsStyle = styled.div`
     padding: 25px;
     background-color: #f7f8fa;
     border-radius: 5px;
-    .ttile {
-      text-align: center;
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-    }
+
     .body {
       display: flex;
       flex-wrap: wrap;

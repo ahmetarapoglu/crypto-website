@@ -1,18 +1,31 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import NavbarStyle from "./navbar.styled";
 // import Container from "react-bootstrap/Container";
 import Container from "@/components/utils/container";
 import { AiOutlineMenu } from "react-icons/ai";
 import { CgMathPlus } from "react-icons/cg";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [state, setState] = useState(false);
+  const ref = useRef(null);
+  console.info("ref", ref);
   const handleChangeMenuState = () => {
     setState(!state);
-    console.info("done");
   };
+
+  function handleClickOutside(event) {
+    if (ref.current && !ref.current.contains(event.target)) {
+      setState(false);
+    }
+  }
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [ref]);
   return (
     <NavbarStyle>
       <Container>
@@ -68,7 +81,7 @@ const Navbar = () => {
               {!state ? <AiOutlineMenu /> : <CgMathPlus />}
             </span>
             {state && (
-              <div className="navbar-mobile-menu">
+              <div className="navbar-mobile-menu" ref={ref}>
                 <div className="navbar-item">
                   <Link href="/">
                     <a className="nav-item-link">Home</a>
