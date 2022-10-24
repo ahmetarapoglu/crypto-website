@@ -15,7 +15,7 @@ const Container = styled.div`
     max-width: 1400px;
   }
   @media (max-width: 1450px) {
-    max-width: 1100px;
+    max-width: 1140px !important;
   }
   @media (max-width: 1200px) {
     max-width: 992px;

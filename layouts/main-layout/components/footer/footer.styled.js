@@ -16,8 +16,6 @@ const FooterStyle = styled.div`
       flex-wrap: wrap;
       justify-content: space-between;
       border-bottom: 1px solid #e5e8ed;
-
-      /* border-top: 1px solid #ebeef2; */
       //responsive
       @media (max-width: 568px) {
         justify-content: start;
@@ -38,6 +36,12 @@ const FooterStyle = styled.div`
               color: #257eaf;
             }
           }
+        }
+      }
+      .footer-menu-content:first-child {
+        margin-bottom: 32px;
+        &:first-child {
+          max-width: 150px;
         }
       }
     }
