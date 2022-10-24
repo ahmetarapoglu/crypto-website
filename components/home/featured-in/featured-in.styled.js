@@ -50,6 +50,21 @@ const FeaturedInStyle = styled.div`
       object-fit: contain;
       /* background-color: #247eaf14; */
     }
+    .swiper-container {
+      width: 480px;
+    }
+
+    @media screen and (min-width: 640px) {
+      .swiper-container {
+        width: 640px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .swiper-container {
+        width: 768px;
+      }
+    }
   }
 `;
 export default FeaturedInStyle;

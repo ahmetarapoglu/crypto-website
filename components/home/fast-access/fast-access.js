@@ -34,32 +34,27 @@ const FastAccess = () => {
         <div className="slide">
           <Swiper
             onInit={(_) => (swiper.current = _)}
-            slidesPerView={4}
-            spaceBetween={5}
+            slidesPerView={3}
+            spaceBetween={20}
             slidesPerGroup={1}
             breakpoints={{
               320: {
-                width: 320,
                 slidesPerView: 1,
-                spaceBetween: 5,
-                slidesPerGroup: 1,
+                spaceBetween: 20,
               },
-              // 567: {
-              //   width: 567,
-              //   slidesPerView: 2,
-              //   spaceBetween: 10,
-              //   slidesPerGroup: 1,
-              // },
-              // 768: {
-              //   width: 768,
-              //   slidesPerView: 3,
-              //   spaceBetween: 20,
-              // },
-              // 992: {
-              //   width: 992,
-              //   slidesPerView: 4,
-              //   spaceBetween: 30,
-              // },
+              567: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              992: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+              },
             }}
             autoplay={{
               delay: 2500,

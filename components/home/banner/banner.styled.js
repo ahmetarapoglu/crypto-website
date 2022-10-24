@@ -4,8 +4,9 @@ const BannerStyle = styled.div`
   padding: 75px 0;
   background-color: #f5f7fa;
   @media only screen and (max-width: 768px) {
-    padding: 100px 0 25px 0;
+    padding: 50px 0;
   }
+
   .branner {
     margin-bottom: 75px;
     .banner-content {
@@ -44,10 +45,48 @@ const BannerStyle = styled.div`
         }
       }
     }
+    @keyframes image1 {
+      0% {
+        transform: translateY(50px);
+      }
+      100% {
+        transform: translateY(-50x);
+      }
+    }
+    @keyframes image2 {
+      0% {
+        transform: translateY(-75x);
+      }
+      100% {
+        transform: translateY(25px);
+      }
+    }
     .banner-image {
       position: relative;
       width: 100%;
-      height: 250px;
+      height: 400px;
+
+      .image1 {
+        animation: image1 5s infinite alternate;
+      }
+      .image2 {
+        animation: image2 5s infinite alternate;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      .banner-image {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 25px;
+      }
+      .banner-content .title {
+        font-size: 1.9rem;
+        margin-bottom: 15px;
+      }
+      .banner-content .text {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+      }
     }
   }
 `;

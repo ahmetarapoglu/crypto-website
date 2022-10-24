@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 const StartTradingStyle = styled.div`
+  background: url("/images/back.svg") no-repeat;
+  background-attachment: fixed;
+  background-color: #f2f8fe;
+  background-position: center;
+  padding: 35px 0;
   .start-trading {
     .trading-body {
       display: flex;
@@ -15,13 +20,11 @@ const StartTradingStyle = styled.div`
         background-color: #fff;
         border-radius: 6px;
         transition: all 0.5s;
+        position: relative;
         @media only screen and (max-width: 768px) {
           margin: 0 0 20px 0;
         }
         .content-header {
-          display: flex;
-          align-items: center;
-          justify-content: center;
           margin-bottom: 15px;
           .icon {
             display: flex;
@@ -29,9 +32,11 @@ const StartTradingStyle = styled.div`
             color: #2bcbd7;
             font-size: 1.9rem;
             margin-right: 15px;
+            margin-bottom: 10px;
           }
           .title {
             color: #26374c;
+            text-align: center;
             font-size: 1.1rem;
           }
         }

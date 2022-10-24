@@ -11,6 +11,7 @@ const FastAccessStyle = styled.div`
   } */
 
   .slide {
+    position: relative;
     .swiper {
       width: 100%;
       height: 100%;
@@ -19,10 +20,7 @@ const FastAccessStyle = styled.div`
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-      border-radius: 8px;
-      padding: 0 5px;
-      margin-right: 5px !important;
-      transition: all 0.5s;
+      background: #fff;
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -35,14 +33,12 @@ const FastAccessStyle = styled.div`
       -ms-flex-align: center;
       -webkit-align-items: center;
       align-items: center;
-      border: 1px solid #e4e4e6 !important;
+      background-color: #247eaf0a;
       border-radius: 12px;
-      background-color: #fff;
-      cursor: grab;
+      padding: 10px;
+      transition: all 0.5s;
       &:hover {
-        /* transform: translateY(-15px); */
-        transform: scale(1.05);
-        position: relative;
+        transform: scale(1.1);
       }
     }
     .swiper-button-next::after,
@@ -51,16 +47,29 @@ const FastAccessStyle = styled.div`
     }
     .swiper-pagination {
       position: relative;
-      z-index: 100;
-      bottom: -2px;
+      bottom: -5px;
     }
     .swiper-slide img {
       display: block;
-      /* background-color: #fff; */
       width: 100%;
       height: 100%;
       object-fit: contain;
-      padding: 5px !important;
+      /* background-color: #247eaf14; */
+    }
+    .swiper-container {
+      width: 480px;
+    }
+
+    @media screen and (min-width: 640px) {
+      .swiper-container {
+        width: 640px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .swiper-container {
+        width: 768px;
+      }
     }
   }
 `;

@@ -1,7 +1,8 @@
 //react
 import { useRef } from "react";
-//ant desgin
-import { Col, Row } from "antd";
+//bootstrap
+import { Col, Row } from "react-bootstrap";
+
 //utils
 import Container from "@/components/utils/container";
 //styles
@@ -17,7 +18,7 @@ const Banner = () => {
       <Container>
         <div className="branner">
           <Row>
-            <Col lg={12}>
+            <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }}>
               <div className="banner-content">
                 <h3 className="title">
                   A trusted and secure bitcoin and crypto exchange
@@ -31,10 +32,22 @@ const Banner = () => {
                 </Link>
               </div>
             </Col>
-            <Col lg={12}>
-              <div className="banner-image">
+            <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 1 }}>
+              {/* <div className="banner-image">
                 <Image src={"/delete/banner.png"} layout="fill" />
-              </div>
+              </div> */}
+              <div className="banner-image">
+                <Image
+                  src={"/images/about-img.png"}
+                  className="image1"
+                  layout="fill"
+                />
+                <Image
+                  src={"/images/promo-bg.png"}
+                  className="image2"
+                  layout="fill"
+                />
+              </div>{" "}
             </Col>
           </Row>
         </div>

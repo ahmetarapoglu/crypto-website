@@ -75,27 +75,23 @@ const FeaturedIn = () => {
                 clickable: true,
               }}
               breakpoints={{
-                567: {
-                  width: 567,
-                  slidesPerView: 2,
-                  spaceBetween: 20,
-                },
                 320: {
-                  width: 320,
                   slidesPerView: 1,
                   spaceBetween: 20,
                 },
+                567: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
 
-                // 768: {
-                //   width: 768,
-                //   slidesPerView: 3,
-                //   spaceBetween: 20,
-                // },
-                // 992: {
-                //   width: 992,
-                //   slidesPerView: 4,
-                //   spaceBetween: 30,
-                // },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+                992: {
+                  slidesPerView: 4,
+                  spaceBetween: 20,
+                },
               }}
               navigation={true}
               modules={[Autoplay, Pagination, Navigation]}

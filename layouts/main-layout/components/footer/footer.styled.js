@@ -4,26 +4,31 @@ const FooterStyle = styled.div`
   position: relative;
   bottom: 0;
   width: 100%;
-  padding: 50px 0 0 0;
+  padding: 25px 0 0 0;
+  border-top: 1px solid #e5e8ed;
+  /* background: url("/images/footer-bg.png") no-repeat;
+  background-position: center center;
+  background-size: cover; */
+  background: #f5f8ff;
   .footer {
     .footer-menu {
-      padding-top: 20px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      border-bottom: 1px solid #ebeef2;
-      border-top: 1px solid #ebeef2;
+      border-bottom: 1px solid #e5e8ed;
+
+      /* border-top: 1px solid #ebeef2; */
       //responsive
       @media (max-width: 568px) {
-        justify-content: center;
+        justify-content: start;
         .footer-menu-content {
-          padding: 0 20px;
+          padding: 0 10px;
         }
       }
       @media (max-width: 410px) {
-        justify-content: center;
+        justify-content: start;
       }
-      .footer-menu-content {
+      .footer-menu-content:not(:first-child) {
         margin-bottom: 32px;
         ul li {
           transition: all 0.5s;
@@ -60,7 +65,7 @@ const FooterStyle = styled.div`
       .socialmedia-link {
         border: 1px solid #bdc8d9;
         border-radius: 7px;
-        padding: 4px 6px;
+        padding: 4px 8px;
         background-color: #fff;
         transition: all 0.1s;
         &:not(:last-child) {
@@ -68,30 +73,18 @@ const FooterStyle = styled.div`
         }
         color: #26374c;
       }
-      a:hover {
-        color: #fff;
-      }
-      .facebook:hover {
+
+      .facebook {
         background-color: #3b5998;
         border-color: #3b5998;
         color: #fff;
       }
-      .telegram:hover {
+      .telegram {
         background-color: #229ed9;
         border-color: #229ed9;
         color: #fff;
       }
-      .instegram:hover {
-        /* background: linear-gradient(
-        to bottom,
-        #9736b6 0%,
-        #aa33b0 32%,
-        #c82e9a 33%,
-        #ce2b92 66%,
-        #d72e83 67%,
-        #dd2b73 67%,
-        #ffc86c 100%
-      ); */
+      .instegram {
         background: linear-gradient(
           to bottom,
           #9736b6 0%,
@@ -114,7 +107,7 @@ const FooterStyle = styled.div`
         );
         color: #fff;
       }
-      .twitter:hover {
+      .twitter {
         background-color: #1da1f2;
         border-color: #1da1f2;
         color: #fff;
@@ -126,22 +119,17 @@ const FooterStyle = styled.div`
       align-items: center;
       justify-content: center;
       transition: all 0.5em;
-      border: 1px solid #bdc8d9;
-      background-color: #fff;
-      color: red;
+      border: 1px solid #26374c;
+      background-color: #26374c;
+      color: #fff;
       padding: 5px 10px;
-      color: #26374c;
       border-radius: 8px;
       height: 32px;
       font-size: 0.9rem;
       transition: all 0.5s;
       &:hover {
-        background-color: #26374c;
-        border-color: #26374c;
-        transform: translateY(-2px);
-        a {
-          color: #fff;
-        }
+        background-color: #257eaf;
+        border-color: #257eaf;
       }
     }
     .pspay p {
@@ -149,6 +137,7 @@ const FooterStyle = styled.div`
       font-size: 0.8rem;
       text-align: center;
       padding: 20px 0;
+      font-weight: 600;
     }
   }
 `;
