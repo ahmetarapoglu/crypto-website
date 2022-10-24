@@ -48,6 +48,9 @@ const FastAccessStyle = styled.div`
     .swiper-pagination {
       position: relative;
       bottom: -5px;
+      @media screen and (max-width: 768px) {
+        bottom: -2px;
+      }
     }
     .swiper-slide img {
       display: block;

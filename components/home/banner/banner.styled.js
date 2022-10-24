@@ -4,7 +4,8 @@ const BannerStyle = styled.div`
   padding: 75px 0;
   background-color: #f5f7fa;
   @media only screen and (max-width: 768px) {
-    padding: 50px 0;
+    padding: 10px 0;
+    height: 65vh;
   }
 
   .branner {
@@ -42,6 +43,10 @@ const BannerStyle = styled.div`
         .get-statred {
           display: flex;
           justify-content: center;
+          width: 50%;
+          margin: auto;
+          padding: 12px 35px;
+          font-size: 1.4rem;
         }
       }
     }
@@ -81,11 +86,11 @@ const BannerStyle = styled.div`
       }
       .banner-content .title {
         font-size: 1.9rem;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
       }
       .banner-content .text {
         font-size: 1.1rem;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
     }
   }
