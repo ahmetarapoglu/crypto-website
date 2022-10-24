@@ -1,7 +1,7 @@
 //style
 import FaqStyle from "./faq.styled";
 //utils
-import Container from "@/components/utils/container";
+import { Container } from "react-bootstrap";
 //antdesgin
 import { Collapse } from "antd";
 import Link from "next/link";

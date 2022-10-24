@@ -1,5 +1,5 @@
 //utils
-import Container from "@/components/utils/container";
+import { Container } from "react-bootstrap";
 //nextjs
 import Link from "next/link";
 //style

@@ -1,4 +1,4 @@
-import Container from "@/components/utils/container";
+import { Container } from "react-bootstrap";
 import CryptocurrenciesStyle from "./cryptocurrencies.styled";
 import Table from "react-bootstrap/Table";
 import Link from "next/link";

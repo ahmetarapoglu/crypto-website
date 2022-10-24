@@ -1,6 +1,6 @@
 import AboutUsStyle from "./about-us.styled";
-import Container from "@/components/utils/container";
 import SectionTitle from "@/components/utils/section-title";
+import { Container } from "react-bootstrap";
 const AboutUs = () => {
   return (
     <AboutUsStyle>

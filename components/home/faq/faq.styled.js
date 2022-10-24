@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 const FaqStyle = styled.div`
   padding: 50px;
+  max-width: 1024px;
+  margin: auto;
   .faq {
     .colpase {
       .ant-collapse {

@@ -1,5 +1,5 @@
 import RecognitionsStyle from "./recognitions.styled";
-import Container from "@/components/utils/container";
+import { Container } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
 import SectionTitle from "@/components/utils/section-title";

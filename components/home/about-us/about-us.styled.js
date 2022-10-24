@@ -6,6 +6,8 @@ const AboutUsStyle = styled.div`
     padding: 25px;
     background-color: #f7f8fa;
     border-radius: 5px;
+    max-width: 900px;
+    margin: auto;
 
     .body {
       display: flex;

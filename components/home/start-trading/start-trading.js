@@ -1,5 +1,5 @@
 import StartTradingStyle from "./start-trading.styled";
-import Container from "@/components/utils/container";
+import { Container } from "react-bootstrap";
 import { AiFillCreditCard } from "react-icons/ai";
 import Link from "next/link";
 import SectionTitle from "@/components/utils/section-title";

@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import NavbarStyle from "./navbar.styled";
 // import Container from "react-bootstrap/Container";
-import Container from "@/components/utils/container";
+import { Container } from "react-bootstrap";
 import { AiOutlineMenu } from "react-icons/ai";
 import { CgMathPlus } from "react-icons/cg";
 

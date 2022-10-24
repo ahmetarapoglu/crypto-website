@@ -1,5 +1,5 @@
 import FeaturedInStyle from "./featured-in.styled";
-import Container from "@/components/utils/container";
+import { Container } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import SwiperCore, { Autoplay } from "swiper";
@@ -19,16 +19,25 @@ const SlideImageStyle = styled.div`
 `;
 const StyledSwiperBtn = styled.div`
   position: absolute;
-  top: 20%;
+  top: -50px;
   border-radius: 20px;
   background-color: #247eaf;
   padding: 6px;
   cursor: pointer;
   color: #fff;
+  .icon {
+    font-size: 25px;
+  }
   ${(props) => {
-    if (props?.placement === "right") return `right:0`;
+    if (props?.placement === "right") return `right:0px`;
     else if (props?.placement === "left") return `right:50px`;
-  }}
+  }};
+  @media only screen and (max-width: 768px) {
+    top: -35px;
+    .icon {
+      font-size: 18px;
+    }
+  } ;
 `;
 
 const FeaturedIn = () => {
@@ -143,14 +152,14 @@ const FeaturedIn = () => {
               placement="right"
               onClick={() => hanleSwiperNextPrev("next")}
             >
-              <IoIosArrowForward style={{ fontSize: "25px" }} />
+              <IoIosArrowForward className="icon" />
             </StyledSwiperBtn>
             <StyledSwiperBtn
               className="swipbtn"
               placement="left"
               onClick={() => hanleSwiperNextPrev("prev")}
             >
-              <IoIosArrowBack style={{ fontSize: "25px" }} />
+              <IoIosArrowBack className="icon" />
             </StyledSwiperBtn>
           </div>
         </div>

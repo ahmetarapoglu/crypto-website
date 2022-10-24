@@ -1,5 +1,5 @@
 import WhoPspayStyle from "./who-pspay.styled";
-import Container from "@/components/utils/container";
+import { Container } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Scrollbar, Mousewheel } from "swiper";
 import SectionTitle from "@/components/utils/section-title";
