@@ -3,8 +3,8 @@ import { useRef } from "react";
 //bootstrap
 import { Col, Row } from "react-bootstrap";
 
-//utils
-import Container from "@/components/utils/container";
+//bootstrap
+import { Container } from "react-bootstrap";
 //styles
 import BannerStyle from "./banner.styled";
 

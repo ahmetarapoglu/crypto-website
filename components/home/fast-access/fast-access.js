@@ -4,8 +4,9 @@ import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import SwiperCore, { Autoplay } from "swiper";
-//utils
-import Container from "@/components/utils/container";
+//bootstrap
+import { Container } from "react-bootstrap";
+
 //next
 import Image from "next/image";
 //stle
