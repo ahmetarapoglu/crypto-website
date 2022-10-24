@@ -40,6 +40,11 @@ ul{
   padding: 0;
   margin: 0;
 }
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1140px !important;
+    }
+}
 html,body{
 
   // XX-Large devices (larger desktops, 1400px and up)
