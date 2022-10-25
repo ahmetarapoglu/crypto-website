@@ -82,7 +82,7 @@ const BannerStyle = styled.div`
       .banner-image {
         width: 100%;
         height: 200px;
-        margin-bottom: 25px;
+        margin-bottom: 40px;
       }
       .banner-content .title {
         font-size: 1.9rem;
