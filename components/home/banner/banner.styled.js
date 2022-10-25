@@ -86,11 +86,11 @@ const BannerStyle = styled.div`
       }
       .banner-content .title {
         font-size: 1.9rem;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
       }
       .banner-content .text {
         font-size: 1.1rem;
-        margin-bottom: 25px;
+        margin-bottom: 40px;
       }
     }
   }
