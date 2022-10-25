@@ -5,7 +5,7 @@ const BannerStyle = styled.div`
   background-color: #f5f7fa;
   @media only screen and (max-width: 768px) {
     padding: 10px 0;
-    height: 65vh;
+    height: 70vh;
   }
 
   .branner {
@@ -90,7 +90,7 @@ const BannerStyle = styled.div`
       }
       .banner-content .text {
         font-size: 1.1rem;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
       }
     }
   }
