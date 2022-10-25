@@ -63,11 +63,11 @@ const FastAccess = () => {
             }}
             loop={true}
             loopFillGroupWithBlank={true}
-            pagination={{
-              clickable: true,
-            }}
-            navigation={true}
-            modules={[Autoplay, Pagination, Navigation]}
+            // pagination={{
+            //   clickable: true,
+            // }}
+            // navigation={true}
+            modules={[Autoplay]}
             className="mySwiper"
           >
             <SwiperSlide>
