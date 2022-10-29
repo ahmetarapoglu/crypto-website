@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
   const [queryClient] = useState(() => new QueryClient());
   // setup layout
   const Layout =
-    layouts[Component.Layout || "none"] || ((children) => <>{children}</>);
+    layouts[Component.layout || "none"] || ((children) => <>{children}</>);
   return (
     <Theme>
       <QueryClientProvider client={queryClient}>
