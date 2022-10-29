@@ -105,7 +105,7 @@ const SignInPage = () => {
               </p>
               <div className="already">
                 <span>Don’t have an account?</span>
-                <Link href="sign-in">Create account</Link>
+                <Link href="sign-up">Create account</Link>
               </div>
             </FooterStyle>
           </div>
