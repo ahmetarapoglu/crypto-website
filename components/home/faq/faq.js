@@ -29,19 +29,66 @@ const Faq = () => {
               ghost
               accordion
             >
-              <Panel header="FAQ Ne Demek?" key="1">
-                <p>{text}</p>
+              <Panel header="How to register?" key="1">
+                <p>
+                  By clicking to register button, fill up your information, and
+                  verify your email.
+                </p>
               </Panel>
 
-              <Panel header="Açılımı Nedir?" key="2">
-                <p>{text}</p>
+              <Panel
+                header="What’s the information required to register?"
+                key="2"
+              >
+                <p>Your email, Legal name and strong password.</p>
               </Panel>
-              <Panel header=" FAQ Türkçe anlamı nedir?" key="3">
-                <p>{text}</p>
+              <Panel header="How can I secure my account?" key="3">
+                <p>
+                  Don’t share your signin information with anyone and you should
+                  enable 2FA
+                </p>
               </Panel>
 
-              <Panel header="FAQ Ne Demek, Açılımı Nedir? " key="4">
-                <p>{text}</p>
+              <Panel
+                header="How can I deposit money to my PSPAY Account?"
+                key="4"
+              >
+                <p>
+                  By clicking on deposit button from your user dashboard and
+                  follow up the steps.
+                </p>
+              </Panel>
+              <Panel header="How can I withdraw my money?" key="5">
+                <p>
+                  By clicking on withdraw button from your user dashboard and
+                  follow up the steps.
+                </p>
+              </Panel>
+              <Panel header="Do you have support??" key="6">
+                <p>
+                  Yes. We do have support working 24/7 , and you can contact us
+                  by open a new ticket from your dashboard.
+                </p>
+              </Panel>
+              <Panel
+                header="Is the PSPAY wallet you provide to me is mine?"
+                key="7"
+              >
+                <p>Yes. The PSPAY wallet you create it is yours.</p>
+              </Panel>
+              <Panel
+                header="Is there any limits for withdraw or deposit?"
+                key="8"
+              >
+                <p>
+                  No, we don’t put limit on any deposit or withdraw request.
+                </p>
+              </Panel>
+              <Panel
+                header="From which countries can I withdraw my money?"
+                key="9"
+              >
+                <p>From all over the world.</p>
               </Panel>
             </Collapse>
           </div>
