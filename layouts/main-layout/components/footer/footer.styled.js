@@ -80,10 +80,9 @@ const FooterStyle = styled.div`
       align-items: center;
       .socialmedia-link {
         border: 1px solid #bdc8d9;
-        border-radius: 7px;
-        padding: 12px;
-        font-size: 1.2rem;
-        border-radius: 50px;
+        padding: 10px;
+        font-size: 1.3rem;
+        border-radius: 10px;
         background-color: #fff;
         transition: all 0.1s;
         a {

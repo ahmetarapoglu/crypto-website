@@ -23,7 +23,6 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 // layout
 import MainLayout from "../layouts/main-layout";
-import Head from "next/head";
 
 const layouts = {
   main: MainLayout,
@@ -35,13 +34,10 @@ function MyApp({ Component, pageProps }) {
   const [queryClient] = useState(() => new QueryClient());
   // setup layout
   const Layout =
-    layouts[Component.layout || "none"] || ((children) => <>{children}</>);
+    layouts[Component.Layout || "none"] || ((children) => <>{children}</>);
   return (
     <Theme>
       <QueryClientProvider client={queryClient}>
-        {/* <Head>
-          <link href="../styles/fonts.css" />
-        </Head> */}
         <GlobalStyles />
         <Layout>
           <Hydrate state={pageProps.dehydratedState}>

@@ -1,0 +1,60 @@
+<svg
+            className="icon qr-code"
+            width="60"
+            height="60"
+            viewBox="0 0 60 60"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <rect width="60" height="60" rx="4" fill="black" />
+            <path
+                d="M28 28H19V19H28V28Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-linecap="square"
+            />
+            <path
+                d="M41 28H32V19H41V28Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-linecap="square"
+            />
+            <path
+                d="M28 41H19V32H28V41Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-linecap="square"
+            />
+            <path
+                d="M41 37V32H37V35H33V32"
+                stroke="white"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-linecap="square"
+            />
+            <path d="M41 41H33V39" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square" />
+            <path
+                d="M24 24H23V23H24V24Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-linecap="square"
+            />
+            <path
+                d="M37 24H36V23H37V24Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-linecap="square"
+            />
+            <path
+                d="M24 37H23V36H24V37Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-linecap="square"
+            />
+        </svg>

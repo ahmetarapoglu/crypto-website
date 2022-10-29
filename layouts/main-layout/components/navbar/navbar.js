@@ -56,7 +56,7 @@ const Navbar = (props) => {
                 </Link>
               </div>
               <div className="navbar-item">
-                <Link href="/">
+                <Link href="/mobile">
                   <a className="nav-item-link">Mobile App</a>
                 </Link>
               </div>
@@ -98,7 +98,7 @@ const Navbar = (props) => {
                   </Link>
                 </div>
                 <div className="navbar-item">
-                  <Link href="/">
+                  <Link href="/mobile">
                     <a className="nav-item-link">Mobile App</a>
                   </Link>
                 </div>
