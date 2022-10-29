@@ -35,14 +35,11 @@ export const ColLeftStyled = styled(Col)`
     }
   }
   .logo {
-    margin-left: 25px;
     position: relative;
-    width: 55px;
-    height: 55px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
-    @media only screen and (max-width: 768px) {
-      margin-left: 65px;
-    }
+    margin: auto;
   }
   .signup-form {
     @media only screen and (max-width: 768px) {
@@ -97,6 +94,12 @@ export const ColLeftStyled = styled(Col)`
           border-color: #247eaf;
         }
       }
+      .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+        .ant-select-selector {
+        border-color: #247eaf;
+        box-shadow: 0 0 0 2px rgb(36 126 175 / 18%);
+      }
+
       .ant-checkbox + span {
         color: #667c99;
         font-size: 0.85rem;
@@ -123,6 +126,9 @@ export const ColLeftStyled = styled(Col)`
         display: flex;
         justify-content: center;
         align-items: center;
+        @media only screen and (max-width: 768px) {
+          /* justify-content: start; */
+        }
       }
 
       .ant-checkbox-checked .ant-checkbox-inner {
@@ -134,6 +140,7 @@ export const ColLeftStyled = styled(Col)`
       .ant-checkbox-input:focus + .ant-checkbox-inner {
         border-color: #247eaf !important;
       }
+
       .ant-checkbox-checked::after {
         border-color: #247eaf;
       }
@@ -174,7 +181,7 @@ export const ColLeftStyled = styled(Col)`
 export const FooterStyle = styled.div`
   .title {
     text-align: center;
-    p {
+    /* p {
       position: relative;
       &:before {
         content: "";
@@ -194,7 +201,7 @@ export const FooterStyle = styled.div`
         height: 1px;
         background: #dbe1ea;
       }
-    }
+    } */
   }
   .social-media {
     display: flex;

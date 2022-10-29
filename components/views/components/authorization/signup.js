@@ -23,7 +23,7 @@ const SignUpPage = () => {
               </Link>
             </div>
             <div className="image">
-              <Image src="/images/sign.png" layout="fill" />
+              <Image src="/images/signup.png" layout="fill" />
             </div>
           </div>
         </ColRightStyled>
@@ -87,7 +87,7 @@ const SignUpPage = () => {
               </Form.Item>
 
               <Form.Item
-                name="remember"
+                name="agree1"
                 valuePropName="checked"
                 wrapperCol={{
                   offset: 0,
@@ -100,7 +100,7 @@ const SignUpPage = () => {
                 </Checkbox>
               </Form.Item>
               <Form.Item
-                name="remember"
+                name="agree2"
                 valuePropName="checked"
                 wrapperCol={{
                   offset: 0,

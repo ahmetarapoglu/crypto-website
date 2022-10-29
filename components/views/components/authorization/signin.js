@@ -27,7 +27,7 @@ const SignInPage = () => {
               </Link>
             </div>
             <div className="image">
-              <Image src="/images/sign.png" layout="fill" />
+              <Image src="/images/signin.png" layout="fill" />
             </div>
           </div>
         </ColRightStyled>
