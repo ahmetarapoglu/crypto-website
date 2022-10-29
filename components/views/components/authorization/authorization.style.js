@@ -40,8 +40,14 @@ export const ColLeftStyled = styled(Col)`
     width: 55px;
     height: 55px;
     object-fit: contain;
+    @media only screen and (max-width: 768px) {
+      margin-left: 65px;
+    }
   }
   .signup-form {
+    @media only screen and (max-width: 768px) {
+      width: 350px;
+    }
     width: 450px;
     margin: 50px auto;
     .header {
