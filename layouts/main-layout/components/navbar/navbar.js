@@ -108,11 +108,11 @@ const Navbar = (props) => {
                   </Link>
                 </div>
                 <div className="login">
-                  <Link href="#">
+                  <Link href="sign-in">
                     <a className="signin">signin</a>
                   </Link>
                   <Link href="#">
-                    <a className="signup">signup</a>
+                    <a className="sign-up">signup</a>
                   </Link>
                 </div>
               </div>
