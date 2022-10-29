@@ -52,24 +52,24 @@ const Navbar = (props) => {
               </div>
               <div className="navbar-item">
                 <Link href="/">
-                  <a className="nav-item-link">Mopile App</a>
+                  <a className="nav-item-link">About PSPAY</a>
                 </Link>
               </div>
               <div className="navbar-item">
                 <Link href="/">
-                  <a className="nav-item-link">Whats Pspay</a>
+                  <a className="nav-item-link">Mobile App</a>
                 </Link>
               </div>
               <div className="navbar-item">
                 <Link href="/">
-                  <a className="nav-item-link">Contact</a>
+                  <a className="nav-item-link">Support</a>
                 </Link>
               </div>
               <div className="login">
-                <Link href="#">
+                <Link href="sign-in">
                   <a className="signin">signin</a>
                 </Link>
-                <Link href="#">
+                <Link href="sign-up">
                   <a className="signup">signup</a>
                 </Link>
               </div>
@@ -94,17 +94,17 @@ const Navbar = (props) => {
                 </div>
                 <div className="navbar-item">
                   <Link href="/">
-                    <a className="nav-item-link">Mopile App</a>
+                    <a className="nav-item-link">About PSPAY</a>
                   </Link>
                 </div>
                 <div className="navbar-item">
                   <Link href="/">
-                    <a className="nav-item-link">Whats Pspay</a>
+                    <a className="nav-item-link">Mobile App</a>
                   </Link>
                 </div>
                 <div className="navbar-item">
                   <Link href="/">
-                    <a className="nav-item-link">Contact</a>
+                    <a className="nav-item-link">Support</a>
                   </Link>
                 </div>
                 <div className="login">

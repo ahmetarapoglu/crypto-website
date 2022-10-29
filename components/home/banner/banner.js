@@ -21,11 +21,11 @@ const Banner = () => {
             <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }}>
               <div className="banner-content">
                 <h3 className="title">
-                  A trusted and secure bitcoin and crypto exchange
+                  Send and receive crypto from anywhere, anytime!
                 </h3>
                 <p className="text">
-                  Get started with the easiest and most secure platform to buy,
-                  sell, trade, and earn cryptocurrencies.
+                  Get started with the most trusted and secure way to transfer
+                  and withdraw your crypto currencies.
                 </p>
                 <Link href="#">
                   <a className="get-statred">Get Started</a>

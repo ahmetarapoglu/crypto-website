@@ -10,10 +10,7 @@ const Cryptocurrencies = () => {
     <CryptocurrenciesStyle>
       <Container>
         <div className="cryptocurrencies">
-          <SectionTitle
-            title="Top cryptocurrencies"
-            desc="Top cryptocurrencies"
-          />
+          <SectionTitle title="Top cryptocurrencies" />
           <div className="table">
             <Table responsive="sm">
               <thead>

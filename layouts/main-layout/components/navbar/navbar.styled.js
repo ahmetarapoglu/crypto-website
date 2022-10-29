@@ -50,6 +50,7 @@ const NavbarStyle = styled.div`
           &:hover .nav-item-link::before {
             color: #257eaf !important;
             width: 100%;
+            border-radius: 8px;
           }
         }
         .login {
@@ -114,7 +115,6 @@ const NavbarStyle = styled.div`
           top: 57px;
           padding: 20px 15px 35px 15px;
           border-top: 1px solid #ebeef2;
-
           .navbar-item {
             padding: 0 0 14px 12px;
             font-size: 1.1rem;

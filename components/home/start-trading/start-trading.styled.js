@@ -19,8 +19,9 @@ const StartTradingStyle = styled.div`
         margin: 0 20px 20px 0;
         background-color: #fff;
         border-radius: 6px;
-        transition: all 0.5s;
+        transition: all 0.5s ease 0s;
         position: relative;
+        z-index: 0;
         @media only screen and (max-width: 768px) {
           margin: 0 0 20px 0;
         }

@@ -54,6 +54,18 @@ const FooterStyle = styled.div`
       text-transform: uppercase;
       padding-bottom: 8px;
       color: #257eaf;
+      position: relative;
+      margin-bottom: 8px;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 40%;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        border-radius: 5px;
+        background-color: #257eaf;
+      }
     }
     ul li a {
       display: block;
@@ -69,9 +81,17 @@ const FooterStyle = styled.div`
       .socialmedia-link {
         border: 1px solid #bdc8d9;
         border-radius: 7px;
-        padding: 4px 8px;
+        padding: 12px;
+        font-size: 1.2rem;
+        border-radius: 50px;
         background-color: #fff;
         transition: all 0.1s;
+        a {
+          svg {
+            display: flex;
+          }
+        }
+
         &:not(:last-child) {
           margin-right: 8px;
         }
