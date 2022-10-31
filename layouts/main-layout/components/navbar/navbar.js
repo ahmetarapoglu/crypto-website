@@ -110,8 +110,8 @@ const Navbar = (props) => {
                   <Link href="sign-in">
                     <a className="signin">signin</a>
                   </Link>
-                  <Link href="#">
-                    <a className="sign-up">signup</a>
+                  <Link href="sign-up">
+                    <a className="signup">signup</a>
                   </Link>
                 </div>
               </div>
