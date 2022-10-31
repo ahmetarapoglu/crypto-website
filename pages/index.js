@@ -25,7 +25,7 @@ export default function Home() {
         <FeaturedIn />
         {/* <FastAccess /> */}
         <Starttrading />
-        <AboutUs />
+        <AboutUs header={true} />
         {/* <Recognitions /> */}
         <WhoPspay />
         <Faq />

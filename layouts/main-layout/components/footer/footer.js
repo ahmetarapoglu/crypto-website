@@ -216,7 +216,7 @@ const Footer = () => {
             </FindUsStyle>
           </div>
           <div className="pspay">
-            <p>Copyright © 2022|Pspay|All copy reserved</p>
+            <p>Copyright©2022 | Pspay | All copy reserved</p>
           </div>
         </div>
       </Container>

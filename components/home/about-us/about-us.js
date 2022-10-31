@@ -1,14 +1,19 @@
 import AboutUsStyle from "./about-us.styled";
 import SectionTitle from "@/components/utils/section-title";
 import { Container } from "react-bootstrap";
-const AboutUs = () => {
+const AboutUs = ({ header }) => {
   return (
     <AboutUsStyle>
       <Container>
-        <SectionTitle
-          title="About Us"
-          desc="Magnam dolores commodi suscipit Magnam dolores commodi suscipit.."
-        />
+        {!header ? (
+          ""
+        ) : (
+          <SectionTitle
+            title="About Us"
+            desc="Magnam dolores commodi suscipit Magnam dolores commodi suscipit.."
+          />
+        )}
+
         <div className="about-us">
           <div className="body">
             <div className="content">
