@@ -45,7 +45,7 @@ const Navbar = (props) => {
                 </Link>
               </div>
               <div className="navbar-item">
-                <Link href="/">
+                <Link href="/blogs">
                   <a className="nav-item-link">Blog</a>
                 </Link>
               </div>
@@ -87,7 +87,7 @@ const Navbar = (props) => {
                   </Link>
                 </div>
                 <div className="navbar-item">
-                  <Link href="/">
+                  <Link href="/blogs">
                     <a className="nav-item-link">Blog</a>
                   </Link>
                 </div>
