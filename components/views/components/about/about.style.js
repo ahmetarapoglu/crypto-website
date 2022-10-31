@@ -4,12 +4,36 @@ const AboutStyle = styled.div`
   padding: 50px;
   .header {
     max-width: 80%;
+    margin-bottom: 100px;
     h3 {
       font-size: 2.5rem;
-      color: #257eaf;
+      color: #1bb6c1;
       span {
         color: #667c99;
         font-size: 2.9rem;
+      }
+    }
+  }
+  .section-1 {
+    .about-1 {
+      p {
+        margin-top: 35px;
+        font-size: 1.1rem;
+        color: #667c99;
+      }
+    }
+  }
+  .section-2 {
+    margin-bottom: 50px;
+    .about-4 {
+      p {
+        font-size: 1.2rem;
+        color: #667c99;
+      }
+      p:nth-child(2) {
+        background: #f7f8fa;
+        padding: 25px;
+        border-radius: 6px;
       }
     }
   }
