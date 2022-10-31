@@ -7,13 +7,15 @@ const NavStyled = styled.nav`
   top: 0;
   z-index: 100;
   border-bottom: 1px solid #ebeef2;
-  box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
+  box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
   background-color: #fff;
   color: #26374c;
   font-size: 0.9rem;
   width: 100%;
+  height: 70px;
 `;
-const MainLayout = ({ children }) => {
+
+export const MainLayout = ({ children }) => {
   return (
     <div>
       <NavStyled>
@@ -26,5 +28,13 @@ const MainLayout = ({ children }) => {
     </div>
   );
 };
-
-export default MainLayout;
+export const NavLayout = ({ children }) => {
+  return (
+    <>
+      <NavStyled>
+        <Navbar />
+      </NavStyled>
+      <main>{children}</main>
+    </>
+  );
+};

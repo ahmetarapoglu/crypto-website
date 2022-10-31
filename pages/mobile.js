@@ -13,5 +13,6 @@ const Mobile = () => {
     </>
   );
 };
-MobilePage.layout = "main";
+
 export default Mobile;
+Mobile.layout = "main";

@@ -1,23 +1,23 @@
 import { Col, Row } from "antd";
-import MainLayout from "layouts/main-layout";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { Container } from "react-bootstrap";
 import { FiDatabase } from "react-icons/fi";
 import { CiGrid41, CiShare2 } from "react-icons/ci";
 import {
   FeaturesSectionStyle,
+  MobileInstallStyle,
   TopSectionStyle,
   WahtSectionStyle,
 } from "./mobile.style";
 
 const MobilePage = () => {
   return (
-    <MainLayout>
+    <>
+      {/* section One */}
       <TopSectionStyle>
         <Container>
-          <Row gutter={(100, 100)}>
+          <Row gutter={(16, 16)}>
             <Col lg={12}>
               <div className="top-sectiopn-content">
                 <div className="content-section-header">
@@ -35,7 +35,11 @@ const MobilePage = () => {
                   <Link href="#">
                     <a>
                       <div className="app-store">
-                        <Image src="/images/app-store.svg" layout="fill" />
+                        <Image
+                          src="/images/app-store.svg"
+                          quality={100}
+                          layout="fill"
+                        />
                       </div>
                     </a>
                   </Link>
@@ -58,12 +62,22 @@ const MobilePage = () => {
             </Col>
             <Col lg={12}>
               <div className="image">
-                <Image src="/images/mobile-section.jpg" layout="fill" />
+                <Image
+                  src="/images/mobile-section.jpg"
+                  width={500}
+                  height={500}
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                  }}
+                  quality={100}
+                />
               </div>
             </Col>
           </Row>
         </Container>
       </TopSectionStyle>
+      {/* section Two */}
       <WahtSectionStyle>
         <Container>
           <div className="header">
@@ -106,6 +120,7 @@ const MobilePage = () => {
           </div>
         </Container>
       </WahtSectionStyle>
+      {/* section Three */}
       <FeaturesSectionStyle>
         <Container>
           <div className="header">
@@ -181,8 +196,11 @@ const MobilePage = () => {
           </div>
         </Container>
       </FeaturesSectionStyle>
-    </MainLayout>
+      {/* section Foure*/}
+      <MobileInstallStyle>
+        <Container></Container>
+      </MobileInstallStyle>
+    </>
   );
 };
-MobilePage.layout = "main";
 export default MobilePage;

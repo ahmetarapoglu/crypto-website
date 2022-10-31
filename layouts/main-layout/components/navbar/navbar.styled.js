@@ -10,10 +10,13 @@ const NavbarStyle = styled.div`
     justify-content: space-between;
     .logo {
       position: relative;
-      width: 55px;
-      height: 55px;
+      width: 150px;
+      height: 50px;
+      img {
+        object-fit: contain;
+      }
       @media only screen and (max-width: 768px) {
-        width: 45px;
+        width: 125px;
         height: 45px;
       }
       img {

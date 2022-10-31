@@ -5,12 +5,11 @@ import NavbarStyle from "./navbar.styled";
 // import Container from "react-bootstrap/Container";
 import { Container } from "react-bootstrap";
 import { AiOutlineMenu } from "react-icons/ai";
-import { CgMathPlus } from "react-icons/cg";
+import { MdOutlineClose } from "react-icons/md";
 
 const Navbar = (props) => {
   const [state, setState] = useState(false);
   const ref = useRef(null);
-  console.info("ref", ref);
   const handleChangeMenuState = () => {
     setState(!state);
   };
@@ -33,7 +32,7 @@ const Navbar = (props) => {
           <div className="logo">
             <Link href="/">
               <a>
-                <Image src={"/images/logo.png"} layout="fill" />
+                <Image src={"/images/logo/PsPay_Logo.png"} layout="fill" />
               </a>
             </Link>
           </div>
@@ -51,7 +50,7 @@ const Navbar = (props) => {
                 </Link>
               </div>
               <div className="navbar-item">
-                <Link href="/">
+                <Link href="/about">
                   <a className="nav-item-link">About PSPAY</a>
                 </Link>
               </div>
@@ -78,7 +77,7 @@ const Navbar = (props) => {
           {/* For Mobile Screen */}
           <div className="navbar-menu-md">
             <span className="icon" onClick={handleChangeMenuState}>
-              {!state ? <AiOutlineMenu /> : <CgMathPlus />}
+              {!state ? <AiOutlineMenu /> : <MdOutlineClose />}
             </span>
             {state && (
               <div className="navbar-mobile-menu" ref={ref}>
@@ -93,7 +92,7 @@ const Navbar = (props) => {
                   </Link>
                 </div>
                 <div className="navbar-item">
-                  <Link href="/">
+                  <Link href="/about">
                     <a className="nav-item-link">About PSPAY</a>
                   </Link>
                 </div>

@@ -22,10 +22,11 @@ import {
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 // layout
-import MainLayout from "../layouts/main-layout";
+import { MainLayout, NavLayout } from "../layouts/main-layout";
 
 const layouts = {
   main: MainLayout,
+  nav: NavLayout,
   none: (props) => <>{props.children}</>,
 };
 

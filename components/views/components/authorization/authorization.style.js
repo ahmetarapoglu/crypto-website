@@ -3,23 +3,18 @@ import { Col } from "antd";
 
 export const ColRightStyled = styled(Col)`
   background: #f5f7fa;
-  height: 100vh;
+  height: calc(100vh - 70px);
   .container {
     max-width: 500px !important;
   }
-  .logo {
-    margin: 25px 0;
-    position: relative;
-    width: 55px;
-    height: 55px;
-    object-fit: contain;
-  }
   .image {
-    position: relative;
+    position: absolute;
     width: 450px;
     height: 450px;
-    margin: auto;
+    margin: 75px auto;
     object-fit: contain;
+    img {
+    }
   }
 
   @media only screen and (max-width: 992px) {
@@ -27,26 +22,12 @@ export const ColRightStyled = styled(Col)`
   }
 `;
 export const ColLeftStyled = styled(Col)`
-  height: 100vh;
-  padding: 25px 0;
-  @media only screen and (min-width: 992px) {
-    .logo {
-      display: none;
-    }
-  }
-  .logo {
-    position: relative;
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
-    margin: auto;
-  }
   .signup-form {
     @media only screen and (max-width: 768px) {
       width: 350px;
     }
     width: 450px;
-    margin: 50px auto;
+    margin: auto;
     .header {
       margin: 25px 0;
       h3 {
@@ -177,31 +158,9 @@ export const ColLeftStyled = styled(Col)`
     }
   }
 `;
-
 export const FooterStyle = styled.div`
   .title {
     text-align: center;
-    /* p {
-      position: relative;
-      &:before {
-        content: "";
-        position: absolute;
-        right: 60px;
-        bottom: 8px;
-        width: 25%;
-        height: 1px;
-        background: #dbe1ea;
-      }
-      &:after {
-        content: "";
-        position: absolute;
-        left: 60px;
-        bottom: 8px;
-        width: 25%;
-        height: 1px;
-        background: #dbe1ea;
-      }
-    } */
   }
   .social-media {
     display: flex;

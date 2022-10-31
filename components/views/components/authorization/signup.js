@@ -15,26 +15,12 @@ const SignUpPage = () => {
       <Row>
         <ColRightStyled xl={12} lg={12}>
           <div className="container">
-            <div className="logo">
-              <Link href="/">
-                <a>
-                  <Image src={"/images/logo.png"} layout="fill" />
-                </a>
-              </Link>
-            </div>
             <div className="image">
               <Image src="/images/signup.png" layout="fill" />
             </div>
           </div>
         </ColRightStyled>
         <ColLeftStyled xl={12} lg={12} xs={24}>
-          <div className="logo">
-            <Link href="/">
-              <a>
-                <Image src={"/images/logo.png"} layout="fill" />
-              </a>
-            </Link>
-          </div>
           <div className="signup-form">
             <div className="header">
               <h3>Create your account</h3>

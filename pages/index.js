@@ -1,4 +1,5 @@
 import AboutUs from "@/components/home/about-us/about-us";
+import BackToTop from "@/components/home/back-to-top-button/backToTop";
 import Banner from "@/components/home/banner/banner";
 import Cryptocurrencies from "@/components/home/cryptocurrencies/cryptocurrencies";
 import Faq from "@/components/home/faq/faq";
@@ -20,14 +21,15 @@ export default function Home() {
       </Head>
       <div className="home-page-content">
         <Banner />
-        <FastAccess />
         <Cryptocurrencies />
+        <FeaturedIn />
+        {/* <FastAccess /> */}
         <Starttrading />
         <AboutUs />
         {/* <Recognitions /> */}
-        <FeaturedIn />
         <WhoPspay />
         <Faq />
+        <BackToTop />
       </div>
     </>
   );

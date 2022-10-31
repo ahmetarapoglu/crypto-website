@@ -1,7 +1,7 @@
 import { Row } from "antd";
 import Image from "next/image";
 import Link from "next/link";
-import { Button, Checkbox, Form, Input, Select } from "antd";
+import { Button, Form, Input, Select } from "antd";
 import {
   ColLeftStyled,
   ColRightStyled,
@@ -14,31 +14,18 @@ const SignInPage = () => {
   const onFinish = (values) => {
     console.info("Success:", values);
   };
+
   return (
     <>
       <Row>
         <ColRightStyled xl={12} lg={12}>
           <div className="container">
-            <div className="logo">
-              <Link href="/">
-                <a>
-                  <Image src={"/images/logo.png"} layout="fill" />
-                </a>
-              </Link>
-            </div>
             <div className="image">
               <Image src="/images/signin.png" layout="fill" />
             </div>
           </div>
         </ColRightStyled>
         <ColLeftStyled xl={12} lg={12} xs={24}>
-          <div className="logo">
-            <Link href="/">
-              <a>
-                <Image src={"/images/logo.png"} layout="fill" />
-              </a>
-            </Link>
-          </div>
           <div className="signup-form">
             <div className="header">
               <h3>Sign in to your account</h3>

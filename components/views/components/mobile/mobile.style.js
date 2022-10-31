@@ -5,6 +5,7 @@ export const TopSectionStyle = styled.div`
   padding: 50px 0;
   .top-sectiopn-content {
     .content-section-header {
+      margin-bottom: 50px;
       h3 {
         color: #26374c;
         font-size: 2.8rem;
@@ -12,7 +13,7 @@ export const TopSectionStyle = styled.div`
       }
       p {
         color: #667c99;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
       }
     }
     .content-section-download {
@@ -23,9 +24,11 @@ export const TopSectionStyle = styled.div`
       .app-store,
       .google-store {
         position: relative;
-        height: 200px;
+        height: 100px;
         width: 200px;
-        object-fit: content;
+        img {
+          object-fit: contain;
+        }
       }
       .qr-code {
         position: relative;
@@ -35,13 +38,8 @@ export const TopSectionStyle = styled.div`
       }
     }
   }
-  .image {
-    position: relative;
-    width: 500px;
-    height: 500px;
-    span img {
-      object-fit: contain;
-    }
+  .image span img {
+    object-fit: contain;
   }
 `;
 
@@ -131,4 +129,9 @@ export const FeaturesSectionStyle = styled.div`
       }
     }
   }
+`;
+
+export const MobileInstallStyle = styled.div`
+  background-color: #f5f7fa;
+  padding: 50px 0;
 `;
