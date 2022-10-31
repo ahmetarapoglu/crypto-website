@@ -29,12 +29,21 @@ const AboutStyle = styled.div`
       p {
         font-size: 1.2rem;
         color: #667c99;
+        text-align: justify;
       }
       p:nth-child(2) {
-        background: #f7f8fa;
+        background: #f1f8ff;
         padding: 25px;
         border-radius: 6px;
       }
+    }
+  }
+  .section-3 {
+    margin-bottom: 50px;
+    p {
+      font-size: 1.1rem;
+      color: #667c99;
+      text-align: justify;
     }
   }
   .our-values {

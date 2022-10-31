@@ -26,6 +26,7 @@ const AboutPage = () => {
                   style={{
                     maxWidth: "100%",
                     height: "auto",
+                    borderRadius: "6px",
                   }}
                   quality={100}
                 />
@@ -41,7 +42,7 @@ const AboutPage = () => {
                 <Image
                   src="/images/about-2.png"
                   width={500}
-                  height={700}
+                  height={600}
                   style={{
                     maxWidth: "100%",
                     height: "auto",
@@ -61,10 +62,11 @@ const AboutPage = () => {
                 <Image
                   src="/images/about-3.png"
                   width={500}
-                  height={700}
+                  height={600}
                   style={{
                     maxWidth: "100%",
                     height: "auto",
+                    borderRadius: "6px",
                   }}
                   quality={100}
                 />
@@ -91,6 +93,56 @@ const AboutPage = () => {
                   REST API.
                 </p>
               </div>
+            </Col>
+          </Row>
+        </div>
+        <div className="section-3">
+          <Row gutter={[50, 50]}>
+            <Col md={12}>
+              <div className="about-5">
+                <p>
+                  CEX.IO is a team of over 370 professionals serving customers
+                  worldwide out of the following jurisdictions: USA, Gibraltar
+                  and Cyprus. Our geographical expansion to new markets is
+                  backed by our regulatory accomplishments and development of
+                  new services for specific audiences.
+                  <br />
+                  <br /> Over the last few years, CEX.IO has grown into a group
+                  of companies with licenses in multiple jurisdictions.
+                  <br />
+                  <br /> CEX.IO Limited received a Distributed Ledger Technology
+                  (DLT) license issued by the Gibraltar Financial Services
+                  Commission (GFSC). CEX.IO Corp. has obtained Money Transmitter
+                  Licenses (MTLs) in 33 US states, and keep on working on
+                  covering more. CEX IO EU Limited provides card processing
+                  services to customers from the European Economic Area (EEA).
+                  We continue to build new services and improve upon existing
+                  ones. Earning your trust is always on our mind. <br /> <br />{" "}
+                  Throughout our company’s history, effective and trustworthy
+                  collaboration with regulators has always been a top priority.
+                  <br /> <br /> Our teams are constantly working to maintain our
+                  compliance with evolving regulatory requirements and financial
+                  industry standards. CEX.IO was proud to be a founding member
+                  of CryptoUK, an association that continues to aim at building
+                  cooperation between the major cryptocurrency players and
+                  regulatory authorities in the UK, with the goal of developing
+                  an appropriate operating framework for cryptocurrency
+                  businesses.
+                </p>
+              </div>
+            </Col>
+            <Col md={12}>
+              <Image
+                src="/images/about-4.png"
+                width={500}
+                height={800}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "6px",
+                }}
+                quality={100}
+              />
             </Col>
           </Row>
         </div>
