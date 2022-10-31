@@ -15,6 +15,7 @@ const AboutStyle = styled.div`
     }
   }
   .section-1 {
+    margin-bottom: 100px;
     .about-1 {
       p {
         margin-top: 35px;
@@ -24,7 +25,7 @@ const AboutStyle = styled.div`
     }
   }
   .section-2 {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     .about-4 {
       p {
         font-size: 1.2rem;
@@ -39,7 +40,7 @@ const AboutStyle = styled.div`
     }
   }
   .section-3 {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     p {
       font-size: 1.1rem;
       color: #667c99;
