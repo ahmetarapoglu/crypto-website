@@ -66,10 +66,10 @@ const Navbar = (props) => {
               </div>
               <div className="login">
                 <Link href="sign-in">
-                  <a className="signin">signin</a>
+                  <a className="signin">Sign In</a>
                 </Link>
-                <Link href="sign-up">
-                  <a className="signup">signup</a>
+                <Link href="register">
+                  <a className="register">Register</a>
                 </Link>
               </div>
             </div>
@@ -108,10 +108,10 @@ const Navbar = (props) => {
                 </div>
                 <div className="login">
                   <Link href="sign-in">
-                    <a className="signin">signin</a>
+                    <a className="signin">Sign In</a>
                   </Link>
-                  <Link href="sign-up">
-                    <a className="signup">signup </a>
+                  <Link href="register">
+                    <a className="register">Register</a>
                   </Link>
                 </div>
               </div>

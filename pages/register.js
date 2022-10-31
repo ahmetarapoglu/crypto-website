@@ -1,7 +1,7 @@
 import SignUpPage from "@/components/views/components/authorization/signup";
 import Head from "next/head";
 
-const SignUp = () => {
+const Register = () => {
   return (
     <>
       <Head>
@@ -14,5 +14,5 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
-SignUp.layout = "nav";
+export default Register;
+Register.layout = "nav";

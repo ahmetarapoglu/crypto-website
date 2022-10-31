@@ -62,7 +62,7 @@ const NavbarStyle = styled.div`
           justify-content: space-between;
           margin-left: 50px;
           .signin,
-          .signup {
+          .register {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -81,7 +81,7 @@ const NavbarStyle = styled.div`
               color: #fff;
             }
           }
-          .signup {
+          .register {
             border: 1.5px solid #bdc8d9;
             background-color: #fff;
             color: #26374c;
@@ -136,7 +136,7 @@ const NavbarStyle = styled.div`
             align-items: center;
             justify-content: center;
             .signin,
-            .signup {
+            .register {
               display: flex;
               align-items: center;
               justify-content: center;
@@ -159,7 +159,7 @@ const NavbarStyle = styled.div`
                 color: #fff;
               }
             }
-            .signup {
+            .register {
               border: 1.5px solid #bdc8d9;
               background-color: #fff;
               color: #26374c;

@@ -5,8 +5,8 @@ export const BackToTopStyle = styled.span`
   color: #fff;
   cursor: pointer;
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 25px;
+  right: 25px;
   padding: 12px;
   border-radius: 50%;
   margin: auto;
