@@ -10,9 +10,7 @@ import {
   WhatsappIcon,
   TwitterShareButton,
 } from "next-share";
-import { useRouter } from "next/router";
 const BlogDetailsPage = () => {
-  const router = useRouter();
   return (
     <BlogDetailsStyle>
       <Container>
@@ -46,7 +44,7 @@ const BlogDetailsPage = () => {
           <div className="share-blog">
             <span className="date">Oct 27, 2022</span>
             <div className="social-media">
-              <FacebookShareButton url={router.asPath}>
+              <FacebookShareButton url={window.location.href}>
                 <div className="icon">
                   <Link href="#">
                     <a targer="_blank">
@@ -58,7 +56,7 @@ const BlogDetailsPage = () => {
                   </Link>
                 </div>
               </FacebookShareButton>
-              <TwitterShareButton url={router.asPath}>
+              <TwitterShareButton url={window.location.href}>
                 <div className="icon">
                   <Link href="#">
                     <a targer="_blank">
@@ -70,7 +68,7 @@ const BlogDetailsPage = () => {
                   </Link>
                 </div>
               </TwitterShareButton>
-              <WhatsappShareButton url={router.asPath}>
+              <WhatsappShareButton url={window.location.href}>
                 <div className="icon">
                   <Link href="#">
                     <a targer="_blank">
