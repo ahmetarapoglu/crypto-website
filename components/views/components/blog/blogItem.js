@@ -21,10 +21,10 @@ const BlogItem = () => {
       </div>
       <div class="contents">
         <Link href="#">
-          <a className="tag">Education</a>
+          <a className="kategori">Education</a>
         </Link>
         <Link href="#">
-          <a className="tag">Crypto Ecosystem</a>
+          <a className="kategori">Crypto Ecosystem</a>
         </Link>
         <h4 className="title">
           Post-Merge Ethereum: Two Major Challenges to Overcome

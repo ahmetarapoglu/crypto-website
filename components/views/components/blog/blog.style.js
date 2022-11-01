@@ -37,7 +37,7 @@ export const BlogItemStyle = styled.div`
   }
   .contents {
     padding: 20px;
-    .tag {
+    .kategori {
       color: #1bb6c1;
       background-color: rgba(27, 182, 193, 0.1);
       border-color: rgba(27, 182, 193, 0.1);
@@ -46,7 +46,7 @@ export const BlogItemStyle = styled.div`
       font-size: 0.8rem;
       font-weight: 600;
     }
-    .tag:not(:first-child) {
+    .kategori:not(:first-child) {
       margin: 0 6px;
     }
     .title {
