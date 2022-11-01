@@ -22,12 +22,35 @@ export const ColRightStyled = styled(Col)`
   }
 `;
 export const ColLeftStyled = styled(Col)`
-  .signup-form {
+  .back-to-home {
+    background-color: #257eaf;
+    color: #fff;
+    border-radius: 30px;
+    padding: 7px 25px;
+    font-size: 0.95rem;
+    border: 1px solid #257eaf;
+    transition: all 0.5s ease 0s;
+    position: relative;
+    top: 25px;
+    left: 15px;
+    display: flex;
+    max-width: 125px;
+    svg {
+      margin-right: 3px;
+      font-size: 1.7rem;
+    }
+    &:hover {
+      background-color: transparent;
+      color: #257eaf;
+    }
+  }
+  .page-form {
     @media only screen and (max-width: 768px) {
       width: 350px;
     }
+
     width: 450px;
-    margin: auto;
+    margin: 0 auto;
     .header {
       margin: 25px 0;
       h3 {
@@ -38,6 +61,14 @@ export const ColLeftStyled = styled(Col)`
       p {
         color: #667c99;
         font-size: 1.2rem;
+      }
+    }
+    .forget-password {
+      color: #257eaf;
+      font-size: 0.95rem;
+      transition: all 0.5s ease 0s;
+      &:hover {
+        color: #06527c;
       }
     }
     .form {
@@ -202,5 +233,12 @@ export const FooterStyle = styled.div`
         color: #247eaf;
       }
     }
+  }
+`;
+
+export const ResetPasswordStyle = styled.div`
+  .rest-password {
+    position: relative;
+    top: 12%;
   }
 `;

@@ -35,8 +35,14 @@ export const BlogDetailsStyle = styled.div`
       justify-content: space-between;
       align-items: center;
       .date {
+        display: flex;
+        align-items: center;
         color: #667c99;
         font-size: 0.85rem;
+        svg {
+          margin-right: 5px;
+          font-size: 1.15rem;
+        }
       }
       .social-media {
         display: flex;

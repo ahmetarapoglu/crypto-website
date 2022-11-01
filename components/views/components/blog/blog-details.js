@@ -10,6 +10,7 @@ import {
   WhatsappIcon,
   TwitterShareButton,
 } from "next-share";
+import { BiCalendar } from "react-icons/bi";
 const BlogDetailsPage = () => {
   const [href, setHref] = useState();
 
@@ -50,7 +51,10 @@ const BlogDetailsPage = () => {
             Post-Merge Ethereum: Two Major Challenges to Overcome
           </h4>
           <div className="share-blog">
-            <span className="date">Oct 27, 2022</span>
+            <span className="date">
+              <BiCalendar />
+              Oct 27, 2022
+            </span>
             <div className="social-media">
               <FacebookShareButton url={href}>
                 <div className="icon">

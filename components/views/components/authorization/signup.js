@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button, Checkbox, Form, Input, Select } from "antd";
 import { ColLeftStyled, ColRightStyled } from "./authorization.style";
+import { BsArrowLeftShort } from "react-icons/bs";
 
 const SignUpPage = () => {
   const { Option } = Select;
@@ -21,7 +22,7 @@ const SignUpPage = () => {
           </div>
         </ColRightStyled>
         <ColLeftStyled xl={12} lg={12} xs={24}>
-          <div className="signup-form">
+          <div className="page-form">
             <div className="header">
               <h3>Create your account</h3>
             </div>

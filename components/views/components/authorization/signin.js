@@ -8,6 +8,7 @@ import {
   FooterStyle,
 } from "./authorization.style";
 import { RiFacebookFill, RiGoogleFill } from "react-icons/ri";
+import { BsArrowLeftShort } from "react-icons/bs";
 
 const SignInPage = () => {
   const [form] = Form.useForm();
@@ -26,7 +27,7 @@ const SignInPage = () => {
           </div>
         </ColRightStyled>
         <ColLeftStyled xl={12} lg={12} xs={24}>
-          <div className="signup-form">
+          <div className="page-form">
             <div className="header">
               <h3>Sign in to your account</h3>
               <p>Securely buy crypto and start trading on a trusted exchange</p>
@@ -64,13 +65,16 @@ const SignInPage = () => {
               >
                 <Input.Password placeholder="Password" />
               </Form.Item>
-
+              <Link href="reset-password">
+                <a className="forget-password">Forgot your password?</a>
+              </Link>
               <Form.Item>
                 <Button type="primary" htmlType="submit">
                   Sign In
                 </Button>
               </Form.Item>
             </Form>
+
             <FooterStyle>
               <div className="title">
                 <p>or sign in with</p>
