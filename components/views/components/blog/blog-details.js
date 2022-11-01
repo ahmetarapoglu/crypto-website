@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { BlogDetailsStyle } from "./blog-details.style";
 import {
@@ -11,6 +11,14 @@ import {
   TwitterShareButton,
 } from "next-share";
 const BlogDetailsPage = () => {
+  const [href, setHref] = useState();
+
+  useEffect(() => {
+    // if (typeof window !== "undefined") {
+    //   const href = window?.location.href;
+    // }
+    setHref(window?.location.href);
+  }, []);
   return (
     <BlogDetailsStyle>
       <Container>
@@ -44,7 +52,7 @@ const BlogDetailsPage = () => {
           <div className="share-blog">
             <span className="date">Oct 27, 2022</span>
             <div className="social-media">
-              <FacebookShareButton url={window.location.href}>
+              <FacebookShareButton url={href}>
                 <div className="icon">
                   <Link href="#">
                     <a targer="_blank">
@@ -56,7 +64,7 @@ const BlogDetailsPage = () => {
                   </Link>
                 </div>
               </FacebookShareButton>
-              <TwitterShareButton url={window.location.href}>
+              <TwitterShareButton url={href}>
                 <div className="icon">
                   <Link href="#">
                     <a targer="_blank">
@@ -68,7 +76,7 @@ const BlogDetailsPage = () => {
                   </Link>
                 </div>
               </TwitterShareButton>
-              <WhatsappShareButton url={window.location.href}>
+              <WhatsappShareButton url={href}>
                 <div className="icon">
                   <Link href="#">
                     <a targer="_blank">
