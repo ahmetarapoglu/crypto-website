@@ -6,9 +6,10 @@ export const BlogDetailsStyle = styled.div`
     position: relative;
     width: 100%;
     height: 500px;
-    img {
+    span img {
       border-radius: 5px;
       object-fit: contain;
+      border-radius: 5px;
     }
   }
   .header {

@@ -40,6 +40,7 @@ const NavbarStyle = styled.div`
             font-weight: 600;
             color: #031d44;
             position: relative;
+            font-size: 0.9rem;
           }
           .nav-item-link::before {
             transition: all 0.5s;

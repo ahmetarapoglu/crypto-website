@@ -62,7 +62,7 @@ const FeaturedIn = () => {
           <div className="slide">
             <Swiper
               onInit={(_) => (swiper.current = _)}
-              slidesPerView={3}
+              slidesPerView={"auto"}
               spaceBetween={20}
               slidesPerGroup={1}
               autoplay={{

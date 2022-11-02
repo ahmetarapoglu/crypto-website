@@ -60,7 +60,7 @@ const Navbar = (props) => {
                 </Link>
               </div>
               <div className="navbar-item">
-                <Link href="/">
+                <Link href="/support">
                   <a className="nav-item-link">Support</a>
                 </Link>
               </div>
@@ -102,7 +102,7 @@ const Navbar = (props) => {
                   </Link>
                 </div>
                 <div className="navbar-item">
-                  <Link href="/">
+                  <Link href="/support">
                     <a className="nav-item-link">Support</a>
                   </Link>
                 </div>

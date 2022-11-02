@@ -69,10 +69,19 @@ export const BlogItemStyle = styled.div`
       -webkit-box-orient: vertical;
     }
     .date {
-      color: #667c99;
+      color: #6d7c90;
       font-size: 0.85rem;
       position: absolute;
       bottom: 15px;
+      padding: 0.25rem 0.75rem;
+      background: #e8f8f9;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      color: #1bb6c1;
+      svg {
+        margin-right: 5px;
+      }
     }
   }
   &:hover {

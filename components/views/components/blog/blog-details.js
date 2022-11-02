@@ -15,9 +15,6 @@ const BlogDetailsPage = () => {
   const [href, setHref] = useState();
 
   useEffect(() => {
-    // if (typeof window !== "undefined") {
-    //   const href = window?.location.href;
-    // }
     setHref(window?.location.href);
   }, []);
   return (
@@ -25,7 +22,7 @@ const BlogDetailsPage = () => {
       <Container>
         <div className="image">
           <Image
-            src="/delete/blog.jpg"
+            src="/images/bit.png"
             layout="fill"
             quality={100}
             style={{
