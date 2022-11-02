@@ -93,6 +93,23 @@ const NavbarStyle = styled.div`
             }
           }
         }
+        .language {
+          margin-left: 10px;
+          .ant-select {
+            width: 75px !important;
+          }
+          .ant-select-selector {
+            border-radius: 6px;
+            border-color: transparent;
+          }
+          .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+            .ant-select-selector {
+            border-color: transparent;
+            box-shadow: 0 0 0 2px transparent;
+            border-right-width: 1px;
+            outline: 0;
+          }
+        }
       }
       @media screen and (max-width: 768px) {
         display: none;
@@ -119,6 +136,7 @@ const NavbarStyle = styled.div`
           top: 57px;
           padding: 20px 15px 35px 15px;
           border-top: 1px solid #ebeef2;
+          box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
           .navbar-item {
             padding: 0 0 14px 12px;
             font-size: 1.1rem;

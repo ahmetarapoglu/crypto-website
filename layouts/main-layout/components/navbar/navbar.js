@@ -6,6 +6,7 @@ import NavbarStyle from "./navbar.styled";
 import { Container } from "react-bootstrap";
 import { AiOutlineMenu } from "react-icons/ai";
 import { MdOutlineClose } from "react-icons/md";
+import { Select } from "antd";
 
 const Navbar = (props) => {
   const [state, setState] = useState(false);
@@ -19,6 +20,9 @@ const Navbar = (props) => {
       setState(false);
     }
   }
+  const handleChange = (value) => {
+    console.log(`selected ${value}`);
+  };
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
@@ -71,6 +75,29 @@ const Navbar = (props) => {
                 <Link href="register">
                   <a className="register">Register</a>
                 </Link>
+              </div>
+              <div className="language">
+                <Select
+                  defaultValue="English"
+                  style={{
+                    width: 120,
+                  }}
+                  onChange={handleChange}
+                  options={[
+                    {
+                      value: "Arabic",
+                      label: (
+                        <img src="/images/syria.png" width={30} height={30} />
+                      ),
+                    },
+                    {
+                      value: "English",
+                      label: (
+                        <img src="/images/english.png" width={30} height={30} />
+                      ),
+                    },
+                  ]}
+                />
               </div>
             </div>
           </div>
