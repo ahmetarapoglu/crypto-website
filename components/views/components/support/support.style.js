@@ -57,11 +57,11 @@ const SupportStyle = styled.div`
       }
     }
     button[type="submit"] {
-      width: 175px;
+      width: 150px;
       border-radius: 10px;
       background: #247eaf;
       border-color: #247eaf;
-      height: 45px;
+      height: 40px;
       font-weight: 600;
       font-size: 1.1rem;
       transition: all 0.7s ease 0s;
