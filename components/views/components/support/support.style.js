@@ -84,6 +84,7 @@ const SupportStyle = styled.div`
   }
   .contact-us {
     .content-header {
+      margin-bottom: 35px;
       h3 {
         font-weight: 700;
         font-size: 1.7rem;

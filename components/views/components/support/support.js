@@ -115,8 +115,7 @@ const SupportPage = () => {
                 <p>
                   Do not hesitate to contact us for any information or
                   questionDo not hesitate to contact us for any information or
-                  question Do not hesitate to contact us for any information or
-                  question .
+                  question..
                 </p>
               </div>
               <Row gutter={[16]}>
