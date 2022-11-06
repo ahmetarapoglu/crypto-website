@@ -125,8 +125,8 @@ const SupportPage = () => {
                       <HiOutlineMail className="icon" />
                       <h3>Email</h3>
                     </span>
-                    <Link href="mailto:ah.ihab.arab3@gmail.com">
-                      <a target="_blank">ah.ihab.arab3@gmail.com</a>
+                    <Link href="mailto:pspay@info.com">
+                      <a target="_blank">pspay@info.com</a>
                     </Link>
                   </div>
                 </Col>
@@ -136,8 +136,8 @@ const SupportPage = () => {
                       <BsTelephone className="icon" />
                       <h3>phoneNumber</h3>
                     </span>
-                    <Link href="tel:05346919249">
-                      <a target="_blank">05346919249</a>
+                    <Link href="tel:05553332211">
+                      <a target="_blank">0555 333 22 11</a>
                     </Link>
                   </div>
                 </Col>

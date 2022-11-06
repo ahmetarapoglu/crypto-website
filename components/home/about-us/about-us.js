@@ -17,10 +17,6 @@ const AboutUs = ({ header }) => {
         <div className="about-us">
           <div className="body">
             <div className="content">
-              <h3 className="title">2013</h3>
-              <p className="rank">Market entry year</p>
-            </div>
-            <div className="content">
               <h3 className="title">~4M</h3>
               <p className="rank">Registered users on trade platform</p>
             </div>

@@ -9,15 +9,31 @@ import axios from "axios";
 import axiosConfig from "services/axiosConfig";
 
 const Cryptocurrencies = () => {
-  const fetchData = async () => {
-    try {
-      const data = await axiosConfig.get(
-        "https://pspay.net/api/frontend/btc-price"
-      );
-      console.info("data", data);
-    } catch (error) {
-      console.info("error", error);
-    }
+  const fetchData = () => {
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://pspay.net/api/frontend/btc-price");
+    xhr.send();
+    xhr.onreadystatechange = function () {
+      if (this.readyState === 4) {
+        if (this.status == 200 && this.status < 300) {
+          console.log(this.responseText);
+        }
+      }
+    };
+    // try {
+    //   // const data = await axiosConfig.get(
+    //   //   "https://pspay.net/api/frontend/btc-price"
+    //   // );
+    //   // const data = await http.request(
+    //   //   `https://pspay.net/api/frontend/btc-price`,
+    //   //   {
+    //   //     headers: { origin: "*", "Content-Type": "application/json" },
+    //   //   }
+    //   // );
+    //   // console.info("data", data);
+    // } catch (error) {
+    //   console.info("error", error);
+    // }
   };
   useEffect(() => {
     fetchData();
