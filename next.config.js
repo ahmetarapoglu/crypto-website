@@ -2,7 +2,19 @@ const withPlugins = require("next-compose-plugins");
 const withAntdLess = require("next-plugin-antd-less");
 
 const nextTranslate = require("next-translate");
-
+const securityHeaders = [
+  { key: "Access-Control-Allow-Credentials", value: "true" },
+  { key: "Access-Control-Allow-Origin", value: "*" },
+  {
+    key: "Access-Control-Allow-Methods",
+    value: "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+  },
+  {
+    key: "Access-Control-Allow-Headers",
+    value:
+      "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+  },
+];
 module.exports = withPlugins(
   [
     [
@@ -54,5 +66,36 @@ module.exports = withPlugins(
       // });
       return config;
     },
+
+    async headers() {
+      return [
+        {
+          // Apply these headers to all routes in your application.
+          source: "/:path*",
+          headers: securityHeaders,
+        },
+      ];
+    },
+    // async headers() {
+    //   return [
+    //     {
+    //       // matching all API routes
+    //       source: "https://pspay.net/api/frontend/(.*)",
+    //       headers: [
+    //         { key: "Access-Control-Allow-Credentials", value: "true" },
+    //         { key: "Access-Control-Allow-Origin", value: "*" },
+    //         {
+    //           key: "Access-Control-Allow-Methods",
+    //           value: "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+    //         },
+    //         {
+    //           key: "Access-Control-Allow-Headers",
+    //           value:
+    //             "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+    //         },
+    //       ],
+    //     },
+    //   ];
+    // },
   }
 );

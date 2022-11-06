@@ -138,9 +138,6 @@ export const ColLeftStyled = styled(Col)`
         display: flex;
         justify-content: center;
         align-items: center;
-        @media only screen and (max-width: 768px) {
-          /* justify-content: start; */
-        }
       }
 
       .ant-checkbox-checked .ant-checkbox-inner {
@@ -152,16 +149,14 @@ export const ColLeftStyled = styled(Col)`
       .ant-checkbox-input:focus + .ant-checkbox-inner {
         border-color: #247eaf !important;
       }
-
       .ant-checkbox-checked::after {
         border-color: #247eaf;
       }
-
       .ant-checkbox-indeterminate .ant-checkbox-inner::after {
         background-color: #247eaf;
       }
       .ant-form-item-explain-error {
-        color: #e65069;
+        color: #ff4d4f;
         font-size: 0.85rem;
         margin: 5px 0;
         font-weight: 500 !important;
@@ -169,7 +164,7 @@ export const ColLeftStyled = styled(Col)`
       .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input,
       .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:hover {
         background: #fff;
-        border-color: #e65069;
+        border-color: #ff4d4f;
       }
     }
     .already {

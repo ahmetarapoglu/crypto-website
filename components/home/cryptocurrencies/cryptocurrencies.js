@@ -4,8 +4,24 @@ import Table from "react-bootstrap/Table";
 import Link from "next/link";
 import { FaBtc } from "react-icons/fa";
 import SectionTitle from "@/components/utils/section-title";
+import { useEffect } from "react";
+import axios from "axios";
+import axiosConfig from "services/axiosConfig";
 
 const Cryptocurrencies = () => {
+  const fetchData = async () => {
+    try {
+      const data = await axiosConfig.get(
+        "https://pspay.net/api/frontend/btc-price"
+      );
+      console.info("data", data);
+    } catch (error) {
+      console.info("error", error);
+    }
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <CryptocurrenciesStyle>
       <Container>
